@@ -1,0 +1,36 @@
+ASC
+
+SELECT studentid,studentname FROM preengineering ORDER BY studentid,studentname ASC
+
+BETWEEN
+
+SELECT studentid,studentname FROM preengineering WHERE studentid BETWEEN 3 AND 7
+
+CONCAT
+
+SELECT CONCAT('studentid', 'studentname')
+
+COUNT
+
+SELECT COUNT(*) FROM preengineering
+
+DESC
+
+SELECT studentid,studentsubject FROM preengineering WHERE studentid >= 7 GROUP BY studentid,studentsubject ORDER BY studentid,studentsubject DESC
+
+HAVING CLUSE
+
+SELECT * FROM orders GROUP BY CUSTOMER_ID HAVING COUNT(CUSTOMER_ID) > 1
+
+DISTINCT
+
+SELECT DISTINCT studentname FROM preengineering
+
+MIN FUNCTION 
+
+SELECT MIN(studentname) FROM preengineering WHERE marks <= 40
+
+MAX FUNCTION
+
+SELECT MAX(studentname) FROM preengineering WHERE marks > 75
+
